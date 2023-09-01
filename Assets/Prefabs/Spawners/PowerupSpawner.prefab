@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2963958423584660834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2963958423584660847}
+  - component: {fileID: 2963958423584660832}
+  - component: {fileID: 2963958423584660833}
+  m_Layer: 0
+  m_Name: PowerupSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2963958423584660847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963958423584660834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2963958423584660832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963958423584660834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82780084885b3d8429c6dfdbf52ed82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_radius: 200
+  m_saveZoneRadius: 5
+--- !u!114 &2963958423584660833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963958423584660834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03de8a0213e97674c9731d0beb296c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_powerupPrefabs:
+  - {fileID: 3393463778992413277, guid: 47823cc71957a5a41b42287d2e37dd62, type: 3}
+  - {fileID: 3616134995055906842, guid: a1ceb79d1ab91f542aee744f7cbb0f8e, type: 3}
+  - {fileID: 6606175777579191330, guid: 27388d2001420ab479c1b6bff5c42c47, type: 3}
+  - {fileID: 1311070485764525304, guid: 881baf9c79dfcf44ea5f4dbe9e552dde, type: 3}
+  - {fileID: 8249143005198787877, guid: 71eb047b16d8e5c4cb2cea7d161a5a35, type: 3}
+  - {fileID: 8249143005198787877, guid: 8b95555fe0e2b2444b7f7e191a5cd48e, type: 3}
+  - {fileID: 8249143005198787877, guid: ed48978154262eb4797871a44812c9c1, type: 3}
+  - {fileID: 8249143005198787877, guid: 91adf958ad1a15f41a675d1928fcac06, type: 3}
+  - {fileID: 8249143005198787877, guid: bce61193e01f3ee41beee316dd21a7b3, type: 3}
+  m_area: {fileID: 2963958423584660832}
+  m_spawnMode: 0
+  m_numSpawns: 20
+  m_respawnTime: 0

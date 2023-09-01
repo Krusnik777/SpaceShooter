@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771951d205f1ac49b6550c4a344577b, type: 3}
+  m_Name: Episode_A
+  m_EditorClassIdentifier: 
+  m_episodeName: Episode 1
+  m_levels:
+  - Episode1-1
+  - Episode1-2
+  - Episode1-3
+  m_levelsBGM:
+  - {fileID: 8300000, guid: feac042554527314e9d6bd57894d68a8, type: 3}
+  - {fileID: 8300000, guid: 98b4348a45d2a614aa83efd4cc85f400, type: 3}
+  - {fileID: 8300000, guid: 1d63c68ae97ffae4eb146e5593f56c9f, type: 3}
+  m_previewImage: {fileID: 21300000, guid: 886fc0aad161a4b4893976a6197db287, type: 3}
