@@ -58,18 +58,13 @@ namespace SpaceShooter
 
         private void ControlVirtualJoystick()
         {
+            /*
             var dir = m_virtualJoystick.Value;
 
             m_targetShip.ThrustControl = dir.y;
-            m_targetShip.TorqueControl = -dir.x;
+            m_targetShip.TorqueControl = -dir.x;*/
 
-            if (m_mobileFirePrimary.IsHold == true)
-                m_targetShip.Fire(TurretMode.Primary);
-
-            if (m_mobileFireSecondary.IsHold == true)
-                m_targetShip.Fire(TurretMode.Secondary);
-
-            /*
+            
             // OBSOLETE
             Vector3 dir = m_virtualJoystick.Value;
 
@@ -78,8 +73,13 @@ namespace SpaceShooter
 
             m_targetShip.ThrustControl = Mathf.Max(0, dot);
             m_targetShip.TorqueControl = -dot2;
-            */
+            
 
+            if (m_mobileFirePrimary.IsHold == true)
+                m_targetShip.Fire(TurretMode.Primary);
+
+            if (m_mobileFireSecondary.IsHold == true)
+                m_targetShip.Fire(TurretMode.Secondary);
         }
 
         private void ControlKeyboard()
